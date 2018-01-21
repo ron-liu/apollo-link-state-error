@@ -36,7 +36,7 @@ const stateLink = withClientState({
 });
 
 const client = new ApolloClient({
-  link: stateLink, //ApolloLink.from([ authLink, stateLink, httpLink]),  //authLink.concat(httpLink),
+  link: stateLink,
   cache
 })
 
